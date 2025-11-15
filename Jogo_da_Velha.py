@@ -46,7 +46,7 @@ def jogadasJogador1():
             print("Linha e ou coluna inválida!")
             os.system("pause")
 
-def jogadasJogador2():
+'''def jogadasJogador2():
     global jogadas
     global quemJoga
     global vit
@@ -65,9 +65,9 @@ def jogadasJogador2():
             jogadas += 1
         except:
             print("Linha e ou coluna inválida!")
-            os.system("pause")
+            os.system("pause")'''
 
-'''def jogadasCPU():
+def jogadasCPU():
     global jogadas
     global quemJoga
     global vit
@@ -82,7 +82,7 @@ def jogadasJogador2():
 
         tabuleiro[l][c] = ("O")
         quemJoga = 2
-        jogadas += 1'''
+        jogadas += 1
 
 def verificarVitoria():
     global tabuleiro
@@ -174,14 +174,14 @@ while(jogarNovamente == "Sim" or "sim"):
         tela()
 
         #em caso de dois jogadores
-        if (quemJoga == 2):
+        '''if (quemJoga == 2):
             jogadasJogador1()
         else:
-            jogadasJogador2()
+            jogadasJogador2()'''
         
         #em caso de jogador contra CPU
-        '''jogadasJogador1()
-        jogadasCPU()'''
+        jogadasJogador1()
+        jogadasCPU()
         
         tela()
         vit = verificarVitoria()
